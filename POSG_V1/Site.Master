@@ -81,8 +81,8 @@
                             <img class="img-responsive" src="<%= ResolveUrl("~/images/layout_img/user_img.jpg") %>" alt="#" />
 
                         </div>
-                        <div class="user_info">
-                           <h6>John David</h6>
+                        <div class="user_info" runat="server">
+                               <h6 runat="server"><%= Session["UserNombreCompleto"] %></h6>
                            <p><span class="online_animation"></span> Online</p>
                         </div>
                      </div>
@@ -121,7 +121,7 @@
                            <li><a href="media_gallery.html">> <span>Por definir</span></a></li>
                         </ul>
                      </li>
-                     <li><a href="price.html"><i class="fa fa-briefcase blue1_color"></i> <span>Actas de grado</span></a></li>
+                     <li><a runat="server" href="~/Pages/Actas_grado.aspx"><i class="fa fa-briefcase blue1_color"></i> <span>Actas de grado</span></a></li>
                      <li>
                         <a href="contact.html">
                         <i class="fa fa-paper-plane red_color"></i> <span>Contactos</span></a>
@@ -171,7 +171,10 @@
                               </ul>
                               <ul class="user_profile_dd">
                                  <li>
-                                    <a class="dropdown-toggle" data-toggle="dropdown"><img class="img-responsive rounded-circle" src="<%= ResolveUrl("~/images/layout_img/user_img.jpg") %>" alt="#" /><span class="name_user">John David</span></a>
+                                                    <!-- NOMB -->
+                                     <a class="dropdown-toggle" data-toggle="dropdown"> <img class="img-responsive rounded-circle" src="<%= ResolveUrl("~/images/layout_img/user_img.jpg") %>" alt="#" />
+                                         <span class="name_user"><%= Session["UserNombreCompleto"] %></span>
+                                     </a>
                                     <div class="dropdown-menu">
                                        <a class="dropdown-item" href="profile.html">Mi Perfil</a>
                                        <a class="dropdown-item" href="settings.html">Configuración</a>
@@ -193,6 +196,7 @@
             </asp:ContentPlaceHolder>
         </div>
     </form>
+
 
                            <!------------------------------- LIBRERIAS------------- -->
 

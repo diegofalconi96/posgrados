@@ -219,6 +219,7 @@
     <Content Include="css\font-awesome.min.css" />
     <Content Include="css\jquery.fancybox.css" />
     <Content Include="css\jquery.fancybox.min.css" />
+    <Content Include="css\login.css" />
     <Content Include="css\owl.carousel.css" />
     <Content Include="css\perfect-scrollbar.css" />
     <Content Include="css\responsive.css" />
@@ -251,6 +252,20 @@
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="images\login\avatar.svg" />
+    <Content Include="images\login\avatar1.svg" />
+    <Content Include="images\login\avatar2.svg" />
+    <Content Include="images\login\avatar3.svg" />
+    <Content Include="images\login\avatar4.png" />
+    <Content Include="images\login\bg.svg" />
+    <Content Include="images\login\bg1.svg" />
+    <Content Include="images\login\bg2.svg" />
+    <Content Include="images\login\bg3.svg" />
+    <Content Include="images\login\bg4.svg" />
+    <Content Include="images\login\bg5.svg" />
+    <Content Include="images\login\bg6.svg" />
+    <Content Include="images\login\bg7.svg" />
+    <Content Include="images\login\wave.png" />
     <Content Include="images\logo\logo_icon1.png" />
     <Content Include="images\logo\logo_utc.png" />
     <Content Include="images\logo\logo_utc1.png" />
@@ -276,18 +291,25 @@
     <Content Include="js\jquery.fancybox.js" />
     <Content Include="js\jquery.fancybox.min.js" />
     <Content Include="js\jquery.min.js" />
+    <Content Include="js\login.js" />
     <Content Include="js\owl.carousel.js" />
     <Content Include="js\perfect-scrollbar.min.js" />
     <Content Include="js\popper.min.js" />
     <Content Include="js\semantic.min.js" />
     <Content Include="js\settings.html" />
     <Content Include="js\utils.js" />
+    <Content Include="js\ValidacionFiltro.js" />
+    <Content Include="login.aspx" />
+    <Content Include="Pages\Actas_grado.aspx" />
     <Content Include="Pages\Notas.aspx" />
     <Content Include="Pages\Persona.aspx" />
+    <None Include="Scripts\_references.js" />
     <Content Include="Site.Master" />
     <Content Include="style.css" />
     <Content Include="ViewSwitcher.ascx" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Bundle.config" />
     <Content Include="packages.config" />
     <Content Include="css\bootstrap-grid.css.map" />
@@ -433,6 +455,7 @@
     <Compile Include="Contact.aspx.designer.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Db_conexion.cs" />
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -443,7 +466,22 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Pages\Actas_grado.aspx.cs">
+      <DependentUpon>Actas_grado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Actas_grado.aspx.designer.cs">
+      <DependentUpon>Actas_grado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Db_conexion.cs" />
     <Compile Include="Pages\Notas.aspx.cs">
       <DependentUpon>Notas.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
